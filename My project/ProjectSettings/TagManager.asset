@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Car
   - Van
+  - Door
+  - RedDoor
+  - Key
+  - UpStairs
+  - DownStairs
+  - PutPlace
+  - TV
   layers:
   - Default
   - TransparentFX
