@@ -90,9 +90,10 @@ public class Player : MonoBehaviour
             collision.gameObject.transform.parent.GetComponent<SpriteRenderer>().sprite = _openedDoorSprite;
             collision.gameObject.transform.parent.position += new Vector3(0f, 1.2f , 0);
             UnityEngine.Debug.Log("RedDoor");
+            collision.gameObject.SetActive(false);
         }
         
-        if (collision.tag == "Door")
+        if (collision.tag == "Door" && _tvPickedUp == true)
         {
             SceneManager.LoadScene("Scene2");
             UnityEngine.Debug.Log("Door");
